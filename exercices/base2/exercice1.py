@@ -5,10 +5,12 @@ Indication : utiliser la boucle for
 """
 
 def factorielle(n=int()):
-    F = 1
-    for k in range(F,n+1):
-        F = F * k
-    return F
+    f = 1
+    if n==0:
+        return f
+    for k in range(f,n+1):
+        f = f * k
+    return f
 
 x=factorielle(5)
 print(x)
