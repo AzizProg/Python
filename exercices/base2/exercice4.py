@@ -3,14 +3,10 @@ Exercice 4
 Ecrire une fonction qui supprime les doublons d’une liste.
 Exemple : la fonction reçoit [1, 1, 2, 4, 9, 2, 5, 4] et retourne [1, 2, 4, 9, 5].
 """
-# myList=[1, 1, 2, 4, 9, 2, 5, 4] 
-# myList.count(4)
-# myList.index(4)
-# print(myList.count(4))
-# print(myList.index(4))
 
-myList=[1, 1, 2, 4, 9, 2, 5, 4] 
-def doublons():
+#J'ai pas mis de parametre car dans notre exmple on a déja une liste definie.
+#Aussi pour éviter qu'a l'appelle de la fonction, je retrouve une retrouve.
+def doublon():   
     l=[1, 1, 2, 4, 9, 2, 5, 4] 
     for element in l:
         if l.count(element)> 1:
@@ -18,5 +14,5 @@ def doublons():
             l.pop(x)
     return l
 
-x=doublons()
+x=doublon()
 print(x)
