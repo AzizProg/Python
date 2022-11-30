@@ -39,4 +39,4 @@ print(liste[2:3])
 print(liste[:2])
 
 #affichez la sous-liste du 3e élément à la fin de la liste 
-print(liste[3:])
+print(liste[2:])
