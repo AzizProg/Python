@@ -16,12 +16,11 @@ def factInverse(n=int()):
         return 1
     for k in range(1,n):
         n = n / k
-        print(n)
-    if n==1:
-        return "la factorielle existe"
-    else:
-        return "la factorielle n'existe pas"
+        if n==1:
+            return "la factorielle existe"
+        elif n<1:
+            return "Aucune factorielle trouvée"
     return n
 
-x=factInverse(24)
+x=factInverse(120)
 print(x)
