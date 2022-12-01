@@ -12,5 +12,5 @@ def factorielle(n=int()):
         f = f * k
     return f
 
-x=factorielle(5)
+x=factorielle(4)
 print(x)
