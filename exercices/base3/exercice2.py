@@ -7,14 +7,20 @@ Si la valeur saisie est supérieure ou inférieure, la machine affiche respectiv
 abandonne la recherche.
 """
 
-def cacheCache(n):
-    res=10
-    if n>res:
-        print("C'est plus")
-    elif n<res:
-        print("C'est moins") 
-    else:
-        print("Bien joué") 
-    return n
+from random import randint
 
-x=cacheCache(12)
+
+def cacheCache(n):
+    res=randint(1,10)
+    for i in range(1,3):
+        n=int(input("Tour"))
+        if n>res:
+            print("C'est plus", "le nombre est",res)
+        elif n<res:
+            print("C'est moins", "le nombre est",res) 
+        else:
+            print("Bien joué", "le nombre est",res) 
+    return "Le nombre était :",n
+
+x=cacheCache(1)
+print(x)
