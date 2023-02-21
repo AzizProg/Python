@@ -12,15 +12,14 @@ from random import randint
 
 def cacheCache(n):
     res=randint(1,10)
-    for i in range(1,3):
-        n=int(input("Tour"))
+    for i in range(1,4):
+        n=int(input("Tour :"))
         if n>res:
             print("C'est plus", "le nombre est",res)
         elif n<res:
-            print("C'est moins", "le nombre est",res) 
+            print("C'est moins", "le nombre est",res)
         else:
-            print("Bien joué", "le nombre est",res) 
-    return "Le nombre était :",n
+            print("Bien joué", "le nombre est",res)
+    return n
 
-x=cacheCache(1)
-print(x)
+cacheCache()
